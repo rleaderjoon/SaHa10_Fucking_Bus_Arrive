@@ -6,7 +6,7 @@ import os
 # load_dotenv()
 
 class Settings(BaseSettings):
-    BIMS_API_KEY: str
+    BIMS_API_KEY: str #pydantic을 통해서 .env파일에 BIMS_API_KEY를 저장했음
 
     # (선택) DB 연결 정보 등 추가 설정
     # DATABASE_URL: str = "postgresql+psycopg2://user:password@host:port/dbname"
@@ -18,5 +18,3 @@ class Settings(BaseSettings):
         pass # .env 안 쓰면 pass
 
 settings = Settings()
-
-# 사용 예시: 다른 파일에서 from app.core.config import settings 후 settings.BIMS_API_KEY 로 사용
