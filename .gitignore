@@ -8,3 +8,4 @@ __pycache__/
 
 # 기타 무시할 파일/폴더들
 /Users/janghyojun/Desktop/git/SaHa10_Fucking_Bus_Arrive/.env
+.env
